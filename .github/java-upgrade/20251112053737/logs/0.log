@@ -1,0 +1,13 @@
+2025-11-12T05:37:37.767Z [INFO] ----------------------invoke install_jdk----------------------
+2025-11-12T05:37:37.768Z [INFO] [Tool.invoke]({name: install_jdk, input: {
+  "version": "21",
+  "projectPath": "c:\\Users\\ASUS\\Documents\\DSA_in_java"
+}}).
+2025-11-12T05:37:37.768Z [INFO] [Task.start](): Starting task toolCall
+2025-11-12T05:37:37.769Z [INFO] [Task.start](): Started task toolCall
+2025-11-12T05:37:37.770Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2025-11-12T05:37:37.770Z [WARN] "GitHub Copilot app modernization - upgrade for Java" and its tools are only available for GitHub Copilot "Pro", "Pro+", "Business" and "Enterprise" plans.
+2025-11-12T05:37:37.771Z [ERROR] [Tool.invoke] error occurs when invoking tool install_jdk: UnsupportedCopilotPlanError: "GitHub Copilot app modernization - upgrade for Java" and its tools are only available for GitHub Copilot "Pro", "Pro+", "Business" and "Enterprise" plans.. Please upgrade your GitHub Copilot plan to use this feature or upgrading this project using other tools you prefer..
+2025-11-12T05:37:37.771Z [INFO] [Task.complete](): Completing task toolCall
+2025-11-12T05:37:37.772Z [INFO] ----------------------invoked install_jdk----------------------
+2025-11-12T05:37:37.773Z [INFO] [Task.complete](): Completed task toolCall
