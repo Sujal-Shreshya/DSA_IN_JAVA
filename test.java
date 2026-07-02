@@ -1,21 +1,25 @@
-import java.io.File;
-import java.io.IOException;
-
 public class test {
-    public static void main(String[] args) {
-        try {
-            // Specify file name or path
-           
- File file = new File("newfile.txt");
+    static void main(String[]ar) {
+        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
+        int target = 22;
+        int ans = Binary(arr, target);
+        System.out.println(ans);
+    }
+    static int Binary(int[] arr, int target) {
+        int st = 0;
+        int end = arr.length - 1;
 
-            if (file.createNewFile()) {
-                System.out.println("File created: " + file.getName());
-            } else {
-                System.out.println("File already exists.");
+        while (st <= end) {
+            int mid = st + (end - st) / 2;
+
+            if(target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                st = mid +1;
+            }else{
+                return mid;
             }
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
         }
+        return -1;
     }
 }
